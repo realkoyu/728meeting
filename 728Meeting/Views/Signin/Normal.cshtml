@@ -1,0 +1,20 @@
+﻿@using _728Meeting.Models
+@model  RecordEntities
+@{
+    ViewBag.Title = "728会议支持系统";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <section id="meeting-content">
+            <h4>您好，请参阅会议信息</h4>
+            <hr />
+            @foreach (var meeting in Model.Meeting.OrderBy(m => m.MeetingStartTime))
+            {
+                @Html.Raw(meeting.Content)
+                <p>&nbsp;</p>
+            }
+        </section>
+        <div style="height:90px;"></div>
+    </div>dd
+</div>
