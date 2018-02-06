@@ -32,7 +32,7 @@
     <Property Name="MeetingEndTime" Type="DateTime" Precision="3" />
     <Property Name="CreatedAt" Type="DateTime" Precision="3" />
     <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
-    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="ParticipantEvent" Relationship="RecordModel.FK_ParticipantEvent_Meeting" FromRole="Meeting" ToRole="ParticipantEvent" />
   </EntityType>
   <EntityType Name="Participant">
@@ -41,13 +41,13 @@
     </Key>
     <Property Name="ParticipantId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="UserId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
-    <Property Name="MeetingInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MeetingInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="ExpertFee" Type="Byte" />
     <Property Name="TravelFee" Type="Byte" />
     <Property Name="Subject" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="ArrivalInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="DepartureInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ArrivalInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DepartureInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Contact" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="CreatedAt" Type="DateTime" Precision="3" />
     <Property Name="UpdatedAt" Type="DateTime" Precision="3" />

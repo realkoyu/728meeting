@@ -235,144 +235,177 @@ namespace _728Meeting.Controllers
             //}
             //recordEntities.SaveChanges();
 
-            var meetingOne = new List<string>()
-                        {
-                           "汪祖蓉",
-"李鹤富",
-"金玉敏",
-"张宏韬",
-"夏春申",
-"庄伟业",
-"王明政",
-"孙志勇",
-"米霖南",
-"张明",
-"路丁",
-"张金东",
-"吴兰强",
-"薄纯青",
-"王伟",
-"孙云根",
-"张培来",
-"赵云",
-"王志兵",
-"高宁",
-"王奇文",
-"吴炳泉",
-"姚启明",
-"徐俊栋",
-"郑永祥",
-"陈梁",
-"陈明军",
-"张海伦",
-"伍兴华",
-"姜赫",
-"陈坚刚",
-"章逸民",
-"丁军",
-"黄飞",
-"薛峻峰",
-"顾汉洋",
-"秋穗正",
-"刘文光",
-"胡晓",
-"宫志刚",
-"姜韶堃",
-"王翰骏",
-"唐伟宝",
-"杨巨文",
-"蒋勇",
-"明廷泽",
-"刘兵",
-"姜迎新",
-"刘亚男",
-"黄会荣",
-"黄炜",
-"耿其瑞",
-"沈增耀",
-                        };
+            //            var meetingOne = new List<string>()
+            //                        {
+            //                           "汪祖蓉",
+            //"李鹤富",
+            //"金玉敏",
+            //"张宏韬",
+            //"夏春申",
+            //"庄伟业",
+            //"王明政",
+            //"孙志勇",
+            //"米霖南",
+            //"张明",
+            //"路丁",
+            //"张金东",
+            //"吴兰强",
+            //"薄纯青",
+            //"王伟",
+            //"孙云根",
+            //"张培来",
+            //"赵云",
+            //"王志兵",
+            //"高宁",
+            //"王奇文",
+            //"吴炳泉",
+            //"姚启明",
+            //"徐俊栋",
+            //"郑永祥",
+            //"陈梁",
+            //"陈明军",
+            //"张海伦",
+            //"伍兴华",
+            //"姜赫",
+            //"陈坚刚",
+            //"章逸民",
+            //"丁军",
+            //"黄飞",
+            //"薛峻峰",
+            //"顾汉洋",
+            //"秋穗正",
+            //"刘文光",
+            //"胡晓",
+            //"宫志刚",
+            //"姜韶堃",
+            //"王翰骏",
+            //"唐伟宝",
+            //"杨巨文",
+            //"蒋勇",
+            //"明廷泽",
+            //"刘兵",
+            //"姜迎新",
+            //"刘亚男",
+            //"黄会荣",
+            //"黄炜",
+            //"耿其瑞",
+            //"沈增耀",
+            //                        };
 
-            foreach (var p in meetingOne)
+            //            foreach (var p in meetingOne)
+            //            {
+            //                var participant = recordEntities.Participant.FirstOrDefault(pt => pt.User.Name == p);
+
+            //                if (participant != null)
+            //                {
+            //                    var newEvent = new ParticipantEvent();
+            //                    newEvent.ParticipantId = participant.ParticipantId;
+            //                    newEvent.MeetingId = "e787dd05-a736-41bb-a5c9-3d6e76b16ac3";
+            //                    newEvent.EventId = Guid.NewGuid().ToString();
+            //                    newEvent.UpdatedAt = DateTime.Now;
+            //                    newEvent.CreatedAt = DateTime.Now;
+            //                    recordEntities.ParticipantEvent.Add(newEvent);
+            //                }
+
+            //            }
+
+            //            var meetingTwo = new List<string>()
+            //                        {
+            //                          "杜希平",
+            //"王泽平",
+            //"张宏韬",
+            //"朱军民",
+            //"周凌",
+            //"席斌",
+            //"张国华",
+            //"王晶",
+            //"王明政",
+            //"孙志勇",
+            //"孙文科",
+            //"王明弹",
+            //"王君栋",
+            //"杨堃",
+            //"孙云根",
+            //"张培来",
+            //"赵云",
+            //"王志兵",
+            //"高宁",
+            //"王奇文",
+            //"吴炳泉",
+            //"姚启明",
+            //"徐俊栋",
+            //"郑永祥",
+            //"陈梁",
+            //"陈明军",
+            //"张海伦",
+            //"伍兴华",
+            //"章逸民",
+            //"丁军",
+            //"薛峻峰",
+            //"项达章",
+            //"奚立峰",
+            //"顾汉洋",
+            //"秋穗正",
+            //"刘文光",
+            //"胡晓",
+            //"王翰骏",
+            //"唐伟宝",
+            //"姜迎新",
+            //"宋杰",
+            //"杨军",
+
+            //                        };
+
+            //            foreach (var p in meetingTwo)
+            //            {
+            //                var participant = recordEntities.Participant.FirstOrDefault(pt => pt.User.Name == p);
+
+            //                if (participant != null)
+            //                {
+            //                    var newEvent = new ParticipantEvent();
+            //                    newEvent.ParticipantId = participant.ParticipantId;
+            //                    newEvent.MeetingId = "c78f8e4d-0564-4e6b-8632-3299d970eeb1";
+            //                    newEvent.EventId = Guid.NewGuid().ToString();
+            //                    newEvent.UpdatedAt = DateTime.Now;
+            //                    newEvent.CreatedAt = DateTime.Now;
+            //                    recordEntities.ParticipantEvent.Add(newEvent);
+            //                }
+            //            }
+
+            var people = new Dictionary<string, string>();
+            people.Add("丁军", "7001");
+            people.Add("黄飞", "7004");
+            people.Add("张俊胜", "7005");
+            people.Add("薛峻峰", "7006");
+            people.Add("胡晓", "7007");
+            people.Add("宫志刚", "7008");
+            people.Add("姜韶堃", "7010");
+            people.Add("王翰骏", "7011");
+            people.Add("蒋勇", "7012");
+            people.Add("章逸民", "8001");
+            people.Add("杜希平", "8002");
+            people.Add("张明", "8003");
+            people.Add("王君栋", "8004");
+            people.Add("杨堃", "8005");
+            people.Add("吴兰强", "8006");
+            people.Add("张培来", "8007");
+            people.Add("赵云", "8008");
+            people.Add("王志兵", "8010");
+            people.Add("王明政", "8011");
+            people.Add("孙志勇", "8012");
+            people.Add("明廷泽", "9001");
+            people.Add("高宁", "9003");
+            people.Add("宋杰", "9004");
+            people.Add("杨军", "9005");
+
+            foreach (var p in recordEntities.Participant)
             {
-                var participant = recordEntities.Participant.FirstOrDefault(pt => pt.User.Name == p);
-
-                if (participant != null)
+                if(people.ContainsKey(p.User.Name))
                 {
-                    var newEvent = new ParticipantEvent();
-                    newEvent.ParticipantId = participant.ParticipantId;
-                    newEvent.MeetingId = "e787dd05-a736-41bb-a5c9-3d6e76b16ac3";
-                    newEvent.EventId = Guid.NewGuid().ToString();
-                    newEvent.UpdatedAt = DateTime.Now;
-                    newEvent.CreatedAt = DateTime.Now;
-                    recordEntities.ParticipantEvent.Add(newEvent);
-                }
-
-            }
-
-            var meetingTwo = new List<string>()
-                        {
-                          "杜希平",
-"王泽平",
-"张宏韬",
-"朱军民",
-"周凌",
-"席斌",
-"张国华",
-"王晶",
-"王明政",
-"孙志勇",
-"孙文科",
-"王明弹",
-"王君栋",
-"杨堃",
-"孙云根",
-"张培来",
-"赵云",
-"王志兵",
-"高宁",
-"王奇文",
-"吴炳泉",
-"姚启明",
-"徐俊栋",
-"郑永祥",
-"陈梁",
-"陈明军",
-"张海伦",
-"伍兴华",
-"章逸民",
-"丁军",
-"薛峻峰",
-"项达章",
-"奚立峰",
-"顾汉洋",
-"秋穗正",
-"刘文光",
-"胡晓",
-"王翰骏",
-"唐伟宝",
-"姜迎新",
-"宋杰",
-"杨军",
-
-                        };
-
-            foreach (var p in meetingTwo)
-            {
-                var participant = recordEntities.Participant.FirstOrDefault(pt => pt.User.Name == p);
-
-                if (participant != null)
-                {
-                    var newEvent = new ParticipantEvent();
-                    newEvent.ParticipantId = participant.ParticipantId;
-                    newEvent.MeetingId = "c78f8e4d-0564-4e6b-8632-3299d970eeb1";
-                    newEvent.EventId = Guid.NewGuid().ToString();
-                    newEvent.UpdatedAt = DateTime.Now;
-                    newEvent.CreatedAt = DateTime.Now;
-                    recordEntities.ParticipantEvent.Add(newEvent);
+                    p.MeetingInfo = "<hr /><h4>您的住宿信息</h4>" +
+                        "<p>上海核工程研究设计院有限公司<br/>科技交流中心<br/>房间号：" + people[p.User.Name] + "</p>" + p.MeetingInfo;
                 }
             }
-
-
 
             recordEntities.SaveChanges();
 

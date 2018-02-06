@@ -29,7 +29,7 @@
     <Property Name="MeetingEndTime" Type="datetime" />
     <Property Name="CreatedAt" Type="datetime" />
     <Property Name="UpdatedAt" Type="datetime" />
-    <Property Name="Content" Type="text" />
+    <Property Name="Content" Type="ntext" />
   </EntityType>
   <EntityType Name="Participant">
     <Key>
@@ -37,13 +37,13 @@
     </Key>
     <Property Name="ParticipantId" Type="varchar" MaxLength="36" Nullable="false" />
     <Property Name="UserId" Type="varchar" MaxLength="36" />
-    <Property Name="MeetingInfo" Type="text" />
-    <Property Name="Notes" Type="text" />
+    <Property Name="MeetingInfo" Type="ntext" />
+    <Property Name="Notes" Type="ntext" />
     <Property Name="ExpertFee" Type="tinyint" />
     <Property Name="TravelFee" Type="tinyint" />
     <Property Name="Subject" Type="nvarchar" MaxLength="100" />
-    <Property Name="ArrivalInfo" Type="text" />
-    <Property Name="DepartureInfo" Type="text" />
+    <Property Name="ArrivalInfo" Type="ntext" />
+    <Property Name="DepartureInfo" Type="ntext" />
     <Property Name="Contact" Type="nvarchar" MaxLength="100" />
     <Property Name="CreatedAt" Type="datetime" />
     <Property Name="UpdatedAt" Type="datetime" />
