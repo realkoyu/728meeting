@@ -7,7 +7,14 @@
 <div class="row">
     <div class="col-md-8">
         <section id="meeting-content">
-            <h4>您好，@Model.User.Name， 请参阅会议信息</h4>
+            <h4>
+                尊敬的来宾您好，欢迎您莅临上海核工院参加会议，会议议程如下。<br />
+                
+            </h4>
+            <span style="color:grey">
+                我们将竭诚为您服务！<br />
+                会务组：包立  18601728393
+            </span>
             <hr/>
             @foreach (var pe in Model.ParticipantEvent.OrderBy(p => p.Meeting.MeetingStartTime))
             {

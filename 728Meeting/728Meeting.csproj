@@ -404,6 +404,8 @@
     <Content Include="Views\Signin\Result.cshtml" />
     <Content Include="Views\Signin\Update.cshtml" />
     <Content Include="Views\Signin\Normal.cshtml" />
+    <Content Include="Views\Signin\Hotel.cshtml" />
+    <Content Include="Views\Signin\Visit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
